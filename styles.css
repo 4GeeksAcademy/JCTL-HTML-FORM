@@ -1,0 +1,254 @@
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #f0f0f0;
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .form-container {
+     background-color: #fff;
+     padding: 30px;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     width: 100%;
+     max-width: 700px;
+     box-sizing: border-box;
+ }
+
+ h2 {
+     margin-top: 0;
+     margin-bottom: 20px;
+     font-size: 24px;
+     font-weight: normal;
+ }
+
+ .error-message {
+     background-color: #f8d7da;
+     color: #721c24;
+     padding: 10px;
+     margin-bottom: 20px;
+     border: 1px solid #f5c6cb;
+     border-radius: 4px;
+ }
+
+ .form-row {
+     display: flex;
+     gap: 20px;
+     margin-bottom: 15px;
+ }
+
+ .form-group {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .form-group.two-thirds {
+     flex: 2;
+ }
+
+ .form-group.one-third {
+     flex: 1;
+ }
+
+ label {
+     margin-bottom: 5px;
+     font-size: 14px;
+     color: #333;
+ }
+
+ input[type="text"],
+ input[type="email"],
+ select,
+ textarea {
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     font-size: 16px;
+ }
+
+ .currency-group {
+     display: flex;
+     align-items: center;
+ }
+
+ .currency-group span {
+     padding: 10px 0;
+     border: 1px solid #ccc;
+     border-right: none;
+     background-color: #eee;
+     color: #555;
+     border-top-left-radius: 4px;
+     border-bottom-left-radius: 4px;
+     padding-left: 10px;
+ }
+
+ .currency-group input {
+     border-left: none;
+     border-top-left-radius: 0;
+     border-bottom-left-radius: 0;
+ }
+
+ select {
+     appearance: none;
+     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%20176.4L146.2%2050.6%205.4%20176.4l20.4%2020.4L146.2%2091.4l120.4%20105.4z%22%2F%3E%3C/svg%3E');
+     background-repeat: no-repeat;
+     background-position: right 10px top 50%;
+     background-size: 12px;
+ }
+
+ textarea {
+     resize: vertical;
+     min-height: 80px;
+ }
+
+ .message-hint {
+     font-size: 12px;
+     color: #888;
+     margin-top: 5px;
+     text-align: right;
+ }
+
+ .accepted-cards {
+     display: inline-flex;
+     gap: 5px;
+     padding: 8px;
+     background-color: #eee;
+     border-radius: 4px;
+     margin-top: 5px;
+ }
+
+ .card-icon {
+     width: 25px;
+     height: 18px;
+     background-color: #ccc;
+     border-radius: 3px;
+     border: 1px solid #aaa;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 10px;
+     color: white;
+     font-weight: bold;
+ }
+
+ .card-icon.visa {
+     background-color: #14348a;
+ }
+
+ .card-icon.mc {
+     background-color: #eb001b;
+ }
+
+ .card-icon.amex {
+     background-color: #2e77b4;
+ }
+
+ .card-icon.discover {
+     background-color: #ff6600;
+ }
+
+ .card-icon.diners {
+     background-color: #00008b;
+ }
+
+ .form-footer {
+     margin-top: 30px;
+     padding-top: 20px;
+     text-align: right;
+     border-top: 1px solid #eee;
+ }
+
+ .form-footer button {
+     padding: 10px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-weight: bold;
+     margin-left: 10px;
+ }
+
+ .form-footer .btn-cancel {
+     background-color: #ddd;
+     color: #555;
+ }
+
+ .form-footer .btn-send {
+     background-color: #007bff;
+     color: white;
+ }
+
+ .address-row {
+     display: flex;
+     gap: 20px;
+     margin-bottom: 15px;
+ }
+
+ .address-row .city-group {
+     flex: 2;
+ }
+
+ .address-row .state-group {
+     flex: 1.5;
+ }
+
+ .address-row .zip-group {
+     flex: 1;
+ }
+
+ .card-selection-group {
+     display: flex;
+     gap: 15px;
+     flex-wrap: wrap;
+     margin-top: 5px;
+ }
+
+ .card-label {
+     padding: 8px 12px;
+     border-radius: 4px;
+     cursor: pointer;
+     font-weight: bold;
+     font-size: 14px;
+     text-align: center;
+     border: 1px solid #ccc;
+     background-color: #f7f7f7;
+     color: #666;
+     transition: all 0.2s;
+ }
+
+ .card-label.visa i {
+     color: #14348a;
+ }
+
+ .card-label.mastercard i {
+     color: #eb001b;
+ }
+
+ .card-label.amex i {
+     color: #2e77b4;
+ }
+
+ .card-label.discover i {
+     color: #ff6600;
+ }
+
+ .card-selection-group {
+     display: flex;
+     gap: 15px;
+     flex-wrap: wrap;
+     margin-top: 5px;
+ }
+
+ .card-selection-group input[type="radio"] {
+     display: none;
+ }
+
+ .card-selection-group input[type="radio"]:checked+.card-label {
+     border-color: #007bff;
+     background-color: #e6f0ff;
+     color: #0056b3;
+     box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+ }
